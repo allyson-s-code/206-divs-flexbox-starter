@@ -99,22 +99,57 @@ textarea {
 html {
   background-color: #597663;
   height: 100%;
+  width: 100%;
 }
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  color:#fff;
+  font-family: 'Kaisei Tokumin', serif;
   padding: 2em;
   font-size: 1em;
   height: 100%;
+  display: flex;
+  justify-content: center;
+
 }
 
 .wrapper {
-  /*add display:flex and set justify-content to space-between*/
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: center;
+    /*add display:flex and set justify-content to space-between*/
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
 }
+
+header, 
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;  
+}
+
+header h1 {
+    font-family: 'Kaisei HarunoUmi', serif;
+    font-size: 3em;
+    font-weight: 700;
+    line-height: .5em;
+}
+
+main {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 3em;
+}
+
+main p {
+    font-size: 1.5em;
+}
+
 
 .div-1, .div-2, .div-3 {
   /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
@@ -123,7 +158,6 @@ body {
   font-size: 1.25em;
   background-color:#597663;
   width: 300px;
-  height: 300px;
   display: flex;
   width: 30%;
   height: auto;
@@ -136,6 +170,17 @@ body {
     padding-left: 1.5em;
 }
 
+footer {
+    flex-direction: row;
+    border-top: 1px solid #fff;
+    margin-top: 3em;
+    flex-flow: row nowrap;
+}
+
+footer a {
+    padding: 25px 25px 25px 0;
+
+}
 
 /* ==========================================================================
    Helper classes
